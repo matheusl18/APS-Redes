@@ -8,20 +8,26 @@
             if(mysqli_num_rows($query2) > 0){
                 $result = $row2['msg'];
             }else{
-                $result = "Nenhum mesangem disponivel";
+                $result = "Nenhuma mesangem disponivel";
             }
             (strlen($result) > 28) ? $msg = substr($result, 0, 28).'...' : $msg = $result;
 
-            //($outgoing_id == $row2['outgoing_msg_id']) ? $voce = "Você: " : $voce = "";
-
             ($row['status'] == "Offline") ? $offline = "offline" : $offline = "";
+            
+            if($outgoing_id == $row2['outgoing_msg_id']){
+                $voce = "Você: ";
+            }else{
+                $voce = "";
+            } 
+
+            
 
             $output .= '<a href="chat.php?user_id='.$row['unique_id'].'">
                         <div class="content">
                         <img src="php/imagens/'. $row['img'] .'" alt="">
                         <div class="details">
                             <span>'. $row['fname'] . " " . $row['lname'] .'</span>
-                            <p>'. $msg .'</p>
+                            <p>'. $voce . $msg .'</p>
                         </div>
                         </div>
                         <div class="status-dot '. $offline .'"><i class="fas fa-circle"></i></div>

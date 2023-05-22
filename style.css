@@ -223,7 +223,7 @@ form .name-details .field:last-child{
     color: #468669;
 }
 .users-list a .status-dot.offline{
-    -ms-text-combine-horizontal: #ccc;
+    color: #ccc;
 }
 
 
