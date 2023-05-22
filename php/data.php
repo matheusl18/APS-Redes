@@ -12,16 +12,16 @@
             }
             (strlen($result) > 28) ? $msg = substr($result, 0, 28).'...' : $msg = $result;
 
-            ($outgoing_id == $row2['outgoing_msg_id']) ? $voce = "Você: " : $voce = "";
+            //($outgoing_id == $row2['outgoing_msg_id']) ? $voce = "Você: " : $voce = "";
 
-            ($row['status'] == "Offline now") ? $offline = "offline" : $offline = "";
+            ($row['status'] == "Offline") ? $offline = "offline" : $offline = "";
 
             $output .= '<a href="chat.php?user_id='.$row['unique_id'].'">
                         <div class="content">
                         <img src="php/imagens/'. $row['img'] .'" alt="">
                         <div class="details">
                             <span>'. $row['fname'] . " " . $row['lname'] .'</span>
-                            <p>'. $voce . $msg .'</p>
+                            <p>'. $msg .'</p>
                         </div>
                         </div>
                         <div class="status-dot '. $offline .'"><i class="fas fa-circle"></i></div>
