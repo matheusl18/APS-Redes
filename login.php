@@ -11,7 +11,7 @@
 <body>
     <div class="wrapper">
         <section class="form login">
-            <header>Realtime Chat Appp</header>
+            <header>Comunicação de Rede</header>
             <form action="#">
                 <div class="error-txt"></div>
                 <div class="field input">
@@ -24,10 +24,10 @@
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field button">
-                    <input type="submit" value="Continue to chat">
+                    <input type="submit" value="Continuar">
                 </div>
             </form>
-            <div class="link">Not yet signed up? <a href="index.php">Singup now</a></div>
+            <div class="link">Não tem uma conta ainda? <a href="index.php">Crie uma</a></div>
         </section>
     </div>
     <script src="javascript/pass-show-hide.js"></script>

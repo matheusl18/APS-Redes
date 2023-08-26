@@ -17,17 +17,17 @@
 <body>
     <div class="wrapper">
         <section class="form singup">
-            <header>Realtime Chat Appp</header>
+            <header>Comunicação de Rede</header>
             <form action="#" enctype="multipart/form-data">
                 <div class="error-txt"></div>
                 <div class="name-details">
                     <div class="field input">
-                        <label>First Name</label>
-                        <input type="text" name="fname" placeholder="First Name" require>
+                        <label>Nome</label>
+                        <input type="text" name="fname" placeholder="Nome" require>
                     </div>
                     <div class="field input">
-                        <label>Last Name</label>
-                        <input type="text" name="lname" placeholder="Last Name" require>
+                        <label>Sobrenome</label>
+                        <input type="text" name="lname" placeholder="Sobrenome" require>
                     </div>
                 </div>
                 <div class="field input">
@@ -40,14 +40,14 @@
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field image">
-                    <label>Select Image</label>
+                    <label>Selecione uma imagem</label>
                     <input type="file" name="imagem" require>
                 </div>
                 <div class="field button">
-                    <input type="submit" value="Continue to chat">
+                    <input type="submit" value="Continuar">
                 </div>
             </form>
-            <div class="link">Already signed up? <a href="login.php">Login now</a></div>
+            <div class="link">Já tem uma conta? <a href="login.php">Login</a></div>
         </section>
     </div>
     <script src="javascript/pass-show-hide.js"></script>

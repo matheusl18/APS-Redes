@@ -25,7 +25,7 @@
                         $time = time();
                         $new_img_name = $time.$img_name;
                         if(move_uploaded_file($tmp_name, "imagens/".$new_img_name)){
-                            $status = "Ativo";
+                            $status = "Online";
                             $random_id = rand(time(), 10000000);
 
                             $sql2 = mysqli_query($conn, "INSERT INTO users (unique_id, fname, lname, email, senha, img, status)
